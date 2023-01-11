@@ -80,7 +80,7 @@ void setup() {
   display.clearDisplay();
 
   display.setCursor(3,3); // xpos, ypos
-  display.print("Call zionism by its real name:Nazism"); // a Holocast suvivor said this 
+  display.print("Conecting to wifi"); 
   display.display();
   // Connect to Wi-Fi network with SSID and password
   WiFi.begin(ssid, password);
@@ -96,6 +96,8 @@ void setup() {
     Serial.println("");
     Serial.print("WiFi connected at IP Address ");
     Serial.println(WiFi.localIP());
+    display.println(WiFi.localIP());
+    display.display();
     server.begin();
       while(!timeClient.update()) {
         timeClient.forceUpdate();}
