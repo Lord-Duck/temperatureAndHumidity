@@ -27,8 +27,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT,
 #define DHTTYPE DHT11   // DHT 11
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid = "Cranston";
-const char* password = "Ursula121";
+const char* ssid = ""; //put credentials here
+const char* password = "";
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
 
